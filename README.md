@@ -16,15 +16,43 @@ Welcome to the Instahyre Job Analytics repository! This project offers insightfu
 The Instahyre Job Analytics project aims to comprehensively understand the job market dynamics using data-driven insights. Our objective is to extract, preprocess, and analyze job posting data from Instahyre and LinkedIn, shedding light on the employment landscape.
 
 ## Description of Data Cleaning / Preprocessing
-### Data Extraction and Preprocessing
-- We utilized the Selenium library to extract job posting data from Instahyre's website.
-- The Extraction directory contains the extraction script `Extraction_Code.py` and extracted CSV files.
-- The Processing directory features `Data Preprocessing and Clustering.ipynb` for data cleaning and K-means clustering.
-- 
+### Data Extraction 
+We employed the Selenium library, a powerful tool for web scraping, to extract comprehensive job posting data from Instahyre's website. The extraction process was orchestrated through the Extraction Code.ipynb script, located in the designated "Extraction" directory. The output of this extraction effort resulted in a structured collection of data stored in CSV files, further facilitating streamlined data analysis.
+
+- Extraction Code
+
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/cb93ade3-8bf3-4baa-81dc-c37ff45ca597)
+
+
+
+
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/587a7bec-37a7-4197-bd51-c93b9ec79fcd)
+
+- Extracted Data
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/a5e8b5d0-f8a7-4b03-8f5f-6743b8e0a8f8)
+
+### Data Processing
+In the subsequent stages we transitioned to the "Processing" directory, where we delved into the critical phases of data preprocessing and clustering. The primary objective here was to refine and prepare the extracted data for meaningful analysis. This involved steps such as handling missing or erroneous data, feature engineering, and standardization to ensure the data was amenable to clustering techniques.
+
+Within the "Processing" directory, the focal point was the "Data Preprocessing and Clustering.ipynb" Jupyter notebook. This comprehensive notebook provided a detailed and interactive environment for performing data preprocessing and applying the K-means clustering algorithm. By combining both tasks in this single notebook, we were able to seamlessly transition from data refinement to the clustering phase, enhancing the efficiency and clarity of our analysis.
+
+-Removing Noise
+
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/feeb2cb9-a942-495b-9bf4-f9e2775ed95e)
+
+- Outlier Analysis
+  
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/73c776bf-f42d-493e-b4ce-e378cb7d7053)
+
+
 ### K-means Clustering Model
 We used Scikit-learn to build a K-means clustering model. This model categorizes companies based on their LinkedIn followers and employee count, allowing us to understand different company classes. The K-means model helped us gain insights into the job market and classify companies effectively.
 
-![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/f7554aa9-c70c-460d-8674-30dbf54537bb)
+- Model Building
+
+![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/98b7fe93-14c5-4af1-8c7c-5d7fbcaa81fa)
+
+- Visualization
 
 ![image](https://github.com/bhardwaj-priya7/Instahyre_Job_Analysis/assets/138392873/fe5a0840-152a-44c5-9dd8-23054ef5fc6e)
 
